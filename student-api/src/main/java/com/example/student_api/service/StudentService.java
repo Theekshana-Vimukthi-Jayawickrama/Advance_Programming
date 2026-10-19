@@ -48,6 +48,10 @@ public class StudentService {
 	}
 
 	private StudentResponse toResponse(Student student) {
-		return new StudentResponse(student.getId(), student.getName(), student.getCourse());
+		return new StudentResponse(
+				student.getId(),
+				student.getName(),
+				student.getEmail(),
+				student.getCourse());
 	}
 }
